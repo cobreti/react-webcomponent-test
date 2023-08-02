@@ -3,6 +3,7 @@ import { resolve } from 'path'
 import react from '@vitejs/plugin-react-swc'
 import typescript from '@rollup/plugin-typescript'
 import sassDts from 'vite-plugin-sass-dts'
+import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -11,7 +12,12 @@ export default defineConfig({
     host: "0.0.0.0"
   },
 
-  plugins: [react(), typescript(), sassDts()],
+  plugins: [
+      react(),
+      typescript(),
+      sassDts(),
+      cssInjectedByJsPlugin()
+  ],
 
   build: {
     lib: {

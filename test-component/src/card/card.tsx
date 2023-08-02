@@ -1,4 +1,4 @@
-import "./card.scss"
+import styles from "./card.module.scss";
 
 
 interface CardProps {
@@ -9,9 +9,10 @@ function Card(props: CardProps): JSX.Element {
 
     return (
         <>
-            <div className="card">Card
+            <div className={styles.name}>test</div>
+            <div className={styles.card}>Card
                 <div></div>
-                <div className="name">{props.name}</div>
+                <div className={styles.name}>{props.name}</div>
             </div>
         </>
     )
