@@ -9,7 +9,6 @@ function Card(props: CardProps): JSX.Element {
 
     return (
         <>
-            <div className={styles.name}>test</div>
             <div className={styles.card}>Card
                 <div></div>
                 <div className={styles.name}>{props.name}</div>
