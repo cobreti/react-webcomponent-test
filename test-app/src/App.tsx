@@ -6,8 +6,7 @@ import './App.css'
 declare global {
     namespace JSX {
         interface TestCardProps extends React.HTMLAttributes<HTMLElement> {
-            name: string,
-            card?: string
+            name: string
         }
         interface IntrinsicElements {
             'test-card': React.DetailedHTMLProps<
