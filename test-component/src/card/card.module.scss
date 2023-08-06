@@ -1,7 +1,10 @@
 
+:root {
+  --wb-border-color: cyan;
+}
 
 .card {
-  border: 1px solid cyan;
+  border: 1px solid var(--wb-border-color);
   box-shadow: #535bf2 8px 8px;
 
   .name {

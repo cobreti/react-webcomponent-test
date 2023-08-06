@@ -6,7 +6,8 @@ import './App.css'
 declare global {
     namespace JSX {
         interface TestCardProps extends React.HTMLAttributes<HTMLElement> {
-            name: string
+            name: string,
+            card?: string
         }
         interface IntrinsicElements {
             'test-card': React.DetailedHTMLProps<
@@ -21,7 +22,7 @@ function App() {
   return (
     <>
         <h1>Test Page</h1>
-        <test-card name="web-component"></test-card>
+        <test-card name="web-component" ></test-card>
         {/*<Card name="test"></Card>*/}
     </>
   )

@@ -20,6 +20,8 @@ export default defineConfig({
   ],
 
   build: {
+    sourcemap: true,
+    minify: false,
     lib: {
       formats: ['es', 'umd'],
       entry: resolve(__dirname, 'src/index.ts'),

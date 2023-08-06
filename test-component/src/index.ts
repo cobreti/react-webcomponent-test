@@ -6,6 +6,9 @@ import Card from "./card/card.tsx";
 
 customElements.define(
     "test-card", r2wc(Card, {
-        props: { name: "string"}
+        props: {
+            name: "string",
+            card: "string"
+        }
     })
 )
